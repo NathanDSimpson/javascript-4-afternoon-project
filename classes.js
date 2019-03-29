@@ -184,6 +184,15 @@ let Machine = class{
       this.needs_reboot = false;
     }
     }
+    // THIS DOES THE SAME THING WITHOUT USING AN ARROW FUNCTION (BUT THIS IS NOT AN ANONYMOUS FUNCTION)
+    // reboot() {
+    //   let me = function () {
+    //     this.wear_and_tear_count -= 10;
+    //     this.needs_reboot = false;
+    //   }
+    //   let me2 = me.bind(this)
+    //   return me2
+    // }
 
 
 }
